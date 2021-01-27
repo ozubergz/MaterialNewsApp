@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="425dp"
+    android:layout_height="430dp"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -32,12 +32,13 @@
 
 <!--    </com.google.android.material.card.MaterialCardView>-->
 
-    <androidx.appcompat.widget.AppCompatCheckedTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/heading_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Top Coverage"
+        android:text="Top Coverage"
         android:textAppearance="?textAppearanceSubtitle1"
+        android:layout_alignParentTop="true"
         android:layout_marginVertical="20dp" />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -62,7 +63,7 @@
         android:id="@+id/tv_body_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Puerto Rico back in darkness after island-wide blackout"
+        android:text="Puerto Rico back in darkness after island-wide blackout"
         android:textAppearance="?textAppearanceSubtitle1"
         android:layout_below="@+id/new_logo_1"/>
 
@@ -72,14 +73,15 @@
         android:layout_height="wrap_content"
         android:text="1 hour ago"
         android:textAppearance="?textAppearanceSubtitle2"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_baseline_more_horiz_24"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
 
 
 <!--    <View style="@style/Divider" android:layout_below="@+id/bg_1" />-->
