@@ -73,7 +73,7 @@
 
     <style name="TextAppearance.MyTheme.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
         <!--Your custom type style here-->
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">10sp</item>
         <item name="android:textColor">#a6a9b6</item>
         <item name="android:textStyle" >bold</item>
     </style>

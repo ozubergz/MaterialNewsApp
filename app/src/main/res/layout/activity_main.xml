@@ -3,204 +3,187 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="425dp"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/main_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="8dp">
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/main_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        app:cardCornerRadius="0dp"-->
+<!--        app:cardElevation="8dp">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:padding="20dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="20dp">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Puerto Rico Power Outage"
-                android:textStyle="bold"
-                android:textAppearance="?textAppearanceHeadline5" />
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Puerto Rico Power Outage"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textAppearance="?textAppearanceHeadline5" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-    </com.google.android.material.card.MaterialCardView>
+<!--    </com.google.android.material.card.MaterialCardView>-->
 
-    <LinearLayout
-        android:id="@+id/bg_1"
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/heading_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main_title"
-        android:orientation="vertical"
-        android:padding="20dp">
+        tools:text="Top Coverage"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:layout_marginVertical="20dp" />
 
-        <TextView
-            android:id="@+id/tv_subtitle_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Top Coverage"
-            android:textAppearance="?textAppearanceSubtitle1"
-            android:layout_marginBottom="20dp"/>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            app:cardCornerRadius="6dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/puerto_rico"
-                android:background="@drawable/round_border"
-                android:adjustViewBounds="true" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/wp_logo"
-            android:adjustViewBounds="true"
-            android:layout_marginBottom="4dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Puerto Rico back in darkness after island-wide blackout"
-            android:textAppearance="?textAppearanceSubtitle1"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1 hour ago"
-            android:textAppearance="?textAppearanceSubtitle2"
-            android:layout_marginTop="11dp"
-            />
-
-
-
-    </LinearLayout>
-
-    <View style="@style/Divider" android:layout_below="@+id/bg_1" />
-
-    <LinearLayout
-        android:id="@+id/bg_2"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/large_img_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bg_1"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:src="@drawable/puerto_rico"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/heading_1"/>
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/new_logo_1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wp_logo"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/large_img_1"/>
 
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cbs_logo"
-            android:adjustViewBounds="true"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Puerto Rico loses power island-wide for first time since Hurricane Maria this U.S. territory"
-                android:textSize="15sp"
-                android:textColor="@color/black_900"
-                android:textStyle="bold"
-                android:layout_weight="1"/>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                app:cardCornerRadius="8dp"
-                android:layout_weight="2">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pr_2"
-                    android:layout_weight="2"
-                    android:adjustViewBounds="true"/>
-
-            </com.google.android.material.card.MaterialCardView>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3 hour ago"
-            android:textAppearance="?textAppearanceSubtitle2"
-            android:layout_marginTop="-20dp"
-            />
-
-    </LinearLayout>
-
-    <View style="@style/Divider" android:layout_below="@+id/bg_2" />
-
-    <LinearLayout
-        android:id="@+id/bg_3"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_body_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bg_2"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:text="Puerto Rico back in darkness after island-wide blackout"
+        android:textAppearance="?textAppearanceSubtitle1"
+        android:layout_below="@+id/new_logo_1"/>
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cbs_logo"
-            android:adjustViewBounds="true"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 hour ago"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:layout_alignParentBottom="true" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_more_horiz_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Puerto Rico loses power island-wide for first time since Hurricane Maria this U.S. territory"
-                android:textSize="15sp"
-                android:textColor="@color/black_900"
-                android:textStyle="bold"
-                android:layout_weight="1"/>
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                app:cardCornerRadius="8dp"
-                android:layout_weight="2">
+<!--    <View style="@style/Divider" android:layout_below="@+id/bg_1" />-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pr_2"
-                    android:layout_weight="2"
-                    android:adjustViewBounds="true"/>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bg_2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/bg_1"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="20dp">-->
 
-            </com.google.android.material.card.MaterialCardView>
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/cbs_logo"-->
+<!--            android:adjustViewBounds="true"/>-->
 
-        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3 hour ago"
-            android:textAppearance="?textAppearanceSubtitle2"
-            android:layout_marginTop="-20dp"
-            />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Puerto Rico loses power island-wide for first time since Hurricane Maria this U.S. territory"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/black_900"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"/>-->
 
-    </LinearLayout>
+
+<!--            <com.google.android.material.imageview.ShapeableImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/pr_2"-->
+<!--                android:layout_weight="2"-->
+<!--                android:adjustViewBounds="true"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="3 hour ago"-->
+<!--            android:textAppearance="?textAppearanceSubtitle2"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <View style="@style/Divider" android:layout_below="@+id/bg_2" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bg_3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/bg_2"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="20dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/cbs_logo"-->
+<!--            android:adjustViewBounds="true"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Puerto Rico loses power island-wide for first time since Hurricane Maria this U.S. territory"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/black_900"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_weight="1"/>-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_weight="2">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/pr_2"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:adjustViewBounds="true"/>-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="3 hour ago"-->
+<!--            android:textAppearance="?textAppearanceSubtitle2" />-->
+<!--    </LinearLayout>-->
 
 </RelativeLayout>

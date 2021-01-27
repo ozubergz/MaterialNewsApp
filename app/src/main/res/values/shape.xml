@@ -37,13 +37,14 @@
     <style name="ShapeAppearance.MyTheme.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <!--Your custom shape here-->
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">20dp</item>
+        <item name="cornerSize">8dp</item>
     </style>
 
     <!--Shape Appearance for medium components like cards, alert dialogs-->
     <style name="ShapeAppearance.MyTheme.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <!--Your custom shape here-->
-
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
     </style>
 
     <!--Shape Appearance for large components like side and bottom navigation drawers-->
